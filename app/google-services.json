@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "456159089916",
+    "firebase_url": "https://missile-guider.firebaseio.com",
+    "project_id": "missile-guider",
+    "storage_bucket": "missile-guider.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456159089916:android:1fee9b73a8f5c8a0",
+        "android_client_info": {
+          "package_name": "shiprocket.com.rocketship"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456159089916-berb4bdlu8ie8ai2nkraetmk627s5o3o.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "456159089916-vjkm23sj7m69phh9hds2jnkd9f6sbmet.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9pQZ15wZXwMZjbzxIm_agHK1Mq-caXlg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-79686944-5"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

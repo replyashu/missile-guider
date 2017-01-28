@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Missile Guider</string>
+    <string name="com.appsee.apikey" translatable="false">01b0b14f7e4d496ebd26a0bff89711a7</string>
+    <string name="com.gameanalytics.apiSecret" translatable="false">2cf64efedd16cc4bee4575eb3913d20438753113</string>
+    <string name="com.gameanalytics.apiKey" translatable="false">2631aaeebdddaff83770674610923d4f</string>
+    <string name="instructions">
+        Aim of the game is to destroy maximum enemy spaceships by our missile.
+        Tap anywhere to increase the speed of the missile.
+        3 Lives for every player, gets replenished after avery 1000 points.
+        Release finger for missile to slow down.
+        If the missile hits the enemy ship,enemies get destroys while hitting friendly ships reduces life.
+        Avoid friends, kill enemies. Beat your personal and global score of others</string>
+
+    <string name="banner_ad_unit_id">ca-app-pub-6992642091470649/5081997613</string>
+
+    <string name="app_id">122520625814</string>
+    <string name="package_name">shiprocket.com.rocketship</string>
+    <string name="achievement_newbie">CgkIlsWxtsgDEAIQAQ</string>
+    <string name="achievement_kiddo">CgkIlsWxtsgDEAIQAg</string>
+    <string name="achievement_grown_up">CgkIlsWxtsgDEAIQAw</string>
+    <string name="achievement_matured">CgkIlsWxtsgDEAIQBA</string>
+    <string name="achievement_well_learned">CgkIlsWxtsgDEAIQBQ</string>
+    <string name="achievement_mastering">CgkIlsWxtsgDEAIQBg</string>
+    <string name="leaderboard_global_leaderboard">CgkIlsWxtsgDEAIQBw</string>
+
+</resources>
