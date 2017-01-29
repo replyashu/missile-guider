@@ -82,6 +82,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
+        mTracker.send(new HitBuilders.EventBuilder()
+                .setCategory("User")
+                .setLabel(appController.getAndroidId())
+                .setAction("Came Now")
+                .build());
+
         sendValueToFirebaseDb();
 
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-3940256099942544~3347511713");
@@ -112,11 +118,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     @Override
     protected void onResume() {
         super.onResume();
-        mTracker.send(new HitBuilders.EventBuilder()
-                .setCategory("User")
-                .setLabel(appController.getAndroidId())
-                .setAction("Came Now")
-                .build());
+
     }
 
     // the onclick methods
@@ -132,6 +134,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
             //the transition from MainActivity to HighScore activity
             startActivity(new Intent(MainActivity.this, HighScore.class));
+            finish();
         }
         if(v == buttonInstructions){
             final Dialog dialog = new Dialog(this); // Context, this, etc.
