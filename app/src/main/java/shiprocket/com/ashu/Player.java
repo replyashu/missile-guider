@@ -1,6 +1,7 @@
 package shiprocket.com.ashu;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Rect;
@@ -28,10 +29,19 @@ public class Player {
         x = 75;
         y = 50;
         speed = 1;
-        bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.player);
+
+        SharedPreferences sp = context.getSharedPreferences("Purchase", 0);
+        String whichShip = sp.getString("newship","default");
+
+        if(whichShip.contains("default"))
+            bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.player);
+        else
+            bitmap = BitmapFactory.decodeResource(context.getResources(), R.drawable.mymiss);
         maxY = screenY - bitmap.getHeight();
         minY = 0;
         boosting = false;
+
+
 
         //initializing rect object
         detectCollision =  new Rect(x, y, bitmap.getWidth(), bitmap.getHeight());

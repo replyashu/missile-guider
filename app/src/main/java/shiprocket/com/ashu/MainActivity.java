@@ -4,12 +4,15 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 import android.provider.Settings;
 import android.support.v7.app.AlertDialog;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
 import com.appsee.Appsee;
 import com.crashlytics.android.Crashlytics;
 
@@ -24,7 +27,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
     //instructions button
     private ImageButton buttonInstructions;
 
-
+    private ImageButton buttonPremium;
+    private ImageButton buttonDefault;
 
     private AppController appController;
 
@@ -53,12 +57,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
         //initializing the instructions button
         buttonInstructions = (ImageButton) findViewById(R.id.buttonHow);
 
+        buttonPremium = (ImageButton) findViewById(R.id.premiumShip);
+
+        buttonDefault = (ImageButton) findViewById(R.id.defaultShip);
+
         //setting the on click listener to high score button
         buttonScore.setOnClickListener(this);
         //setting the on click listener to play now button
         buttonPlay.setOnClickListener(this);
         buttonInstructions.setOnClickListener(this);
 
+        buttonPremium.setOnClickListener(this);
+        buttonDefault.setOnClickListener(this);
         appController = (AppController) getApplication();
 
     }
@@ -92,6 +102,21 @@ public class MainActivity extends Activity implements View.OnClickListener {
             dialog.show();
         }
 
+        if(v == buttonPremium){
+            SharedPreferences sp = getSharedPreferences("Purchase", 0);
+            String isPremium = sp.getString("premium", "no");
+
+
+                sp.edit().putString("newship","premium").commit();
+                Toast.makeText(getApplicationContext(), "Ready To Go Captain", Toast.LENGTH_LONG).show();
+//            }
+        }
+        if(v == buttonDefault){
+            SharedPreferences sp = getSharedPreferences("Purchase", 0);
+
+            sp.edit().putString("newship","default").commit();
+            Toast.makeText(getApplicationContext(), "Ready To Go Captain", Toast.LENGTH_LONG).show();
+        }
 
     }
 

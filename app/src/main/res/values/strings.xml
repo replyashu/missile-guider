@@ -5,11 +5,8 @@
     <string name="com.gameanalytics.apiKey" translatable="false">2631aaeebdddaff83770674610923d4f</string>
     <string name="instructions">
         Aim of the game is to destroy maximum enemy spaceships by our missile.
-        Tap anywhere to increase the speed of the missile.
-        3 Lives for every player, gets replenished after avery 1000 points.
-        Release finger for missile to slow down.
-        If the missile hits the enemy ship,enemies get destroys while hitting friendly ships reduces life.
-        Avoid friends, kill enemies. Beat your personal and global score of others</string>
+        Tap to increase the speed of the missile.
+        Avoid friends, kill enemies.</string>
 
     <string name="banner_ad_unit_id">ca-app-pub-6992642091470649/5081997613</string>
 

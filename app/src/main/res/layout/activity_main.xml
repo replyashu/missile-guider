@@ -11,6 +11,60 @@
     android:background="@drawable/splash"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use Ships"
+            android:layout_margin="20dp"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"/>
+
+        <ImageButton
+            android:id="@+id/defaultShip"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/player"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DEFAULT"
+            android:layout_marginLeft="30dp"
+            android:textStyle="italic"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            />
+
+        <ImageButton
+            android:id="@+id/premiumShip"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:scaleType="fitXY"
+            android:background="@android:color/transparent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/mymiss"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PREMIUM"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            />
+
+    </LinearLayout>
+
+
+
     <ImageButton
         android:id="@+id/buttonPlay"
         android:background="@drawable/playnow"
@@ -35,8 +89,7 @@
         android:layout_margin="10dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-         />
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
